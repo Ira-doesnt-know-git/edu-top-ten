@@ -412,6 +412,46 @@ h1 {
   padding: 13px 22px;
 }
 
+.app-footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  height: 34px;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(83, 71, 54, 0.1);
+  color: rgba(58, 52, 44, 0.62);
+  background: rgba(222, 214, 200, 0.86);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0 max(18px, env(safe-area-inset-left)) 0
+    max(18px, env(safe-area-inset-right));
+}
+
+.app-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(58, 52, 44, 0.72);
+  text-decoration: none;
+  transition:
+    color 160ms ease,
+    opacity 160ms ease;
+}
+
+.app-footer a:hover {
+  color: rgba(34, 31, 28, 0.9);
+}
+
+.app-footer svg {
+  flex: 0 0 auto;
+}
+
 @media (max-width: 760px) {
   :root {
     --card-width: min(84vw, 390px);
@@ -438,6 +478,22 @@ h1 {
 
   .mobile-intro {
     display: grid;
+  }
+
+  .app-footer {
+    height: 32px;
+    font-size: 0.68rem;
+    padding: 0 max(12px, env(safe-area-inset-left)) 0
+      max(12px, env(safe-area-inset-right));
+  }
+
+  .app-footer a {
+    gap: 5px;
+  }
+
+  .app-footer svg {
+    width: 14px;
+    height: 14px;
   }
 }
 
