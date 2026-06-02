@@ -60,6 +60,13 @@ Allowed tones:
 - `negative`
 - `neutral`
 
+## License
+
+Source code is licensed under the MIT License.
+
+Prompt and card content: „Fanmode (edu edit) zu ‚Top Ten’“ von Frank Homp ist lizenziert unter CC BY 4.0.
+
+This license note applies only to the original code and educational prompt content in this repository. It does not grant any rights to the original game “Top Ten”, its name, design, cards, or other protected material.
 
 ## Disclaimer
 
