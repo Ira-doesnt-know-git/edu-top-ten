@@ -15,21 +15,13 @@ import {
 } from "motion/react";
 import promptsCsv from "./data/prompts.csv?raw";
 
-type Tone = "positive" | "negative" | "neutral";
-
 type PromptCardData = {
   id: string;
   context: string;
   question: string;
   scale: {
-    low: {
-      label: string;
-      tone: Tone;
-    };
-    high: {
-      label: string;
-      tone: Tone;
-    };
+    one: string;
+    ten: string;
   };
 };
 
@@ -108,28 +100,14 @@ function parseCsv(source: string): Record<string, string>[] {
   );
 }
 
-function parseTone(value: string): Tone {
-  if (value === "positive" || value === "negative" || value === "neutral") {
-    return value;
-  }
-
-  throw new Error(`Unknown scale tone: ${value}`);
-}
-
 function loadPrompts(): PromptCardData[] {
   return parseCsv(promptsCsv).map((record) => ({
     id: record.id,
     context: record.context,
     question: record.question,
     scale: {
-      low: {
-        label: record.scaleLow,
-        tone: parseTone(record.toneLow),
-      },
-      high: {
-        label: record.scaleHigh,
-        tone: parseTone(record.toneHigh),
-      },
+      one: record.scale1,
+      ten: record.scale10,
     },
   }));
 }
@@ -424,54 +402,32 @@ function PromptCard({
         <h1>{card.prompt.question}</h1>
 
         <div className="scale-row" aria-label="Skala von 1 bis 10">
-          <ScaleBound bound={card.prompt.scale.low} />
+          <ScaleBound label={card.prompt.scale.one} />
           <div className="scale-divider" aria-hidden="true" />
-          <ScaleBound bound={card.prompt.scale.high} />
+          <ScaleBound label={card.prompt.scale.ten} />
         </div>
-        <ScaleBar
-          lowTone={card.prompt.scale.low.tone}
-          highTone={card.prompt.scale.high.tone}
-        />
+        <ScaleBar />
       </div>
     </motion.article>
   );
 }
 
-function ScaleBound({ bound }: { bound: PromptCardData["scale"]["low"] }) {
+function ScaleBound({ label }: { label: string }) {
   return (
-    <div className={`scale-bound tone-${bound.tone}`}>
-      <span className="scale-label">{bound.label}</span>
+    <div className="scale-bound">
+      <span className="scale-label">{label}</span>
     </div>
   );
 }
 
-function ScaleBar({ lowTone, highTone }: { lowTone: Tone; highTone: Tone }) {
+function ScaleBar() {
   return (
     <div className="scale-bar" aria-hidden="true">
       <span>1</span>
-      <div
-        className="scale-track"
-        style={{
-          background: `linear-gradient(90deg, ${toneColor(lowTone)}, ${toneColor(
-            highTone,
-          )})`,
-        }}
-      />
+      <div className="scale-track" />
       <span>10</span>
     </div>
   );
-}
-
-function toneColor(tone: Tone) {
-  if (tone === "positive") {
-    return "#51765a";
-  }
-
-  if (tone === "negative") {
-    return "#9b4e49";
-  }
-
-  return "#8b857b";
 }
 
 function DeckStack({ count }: { count: number }) {

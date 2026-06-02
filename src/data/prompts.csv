@@ -1,19 +1,19 @@
-id,context,question,scaleLow,toneLow,scaleHigh,toneHigh
-lekture-vorschlag,"Du bist Lehrer:in. Deine Klasse soll eine Lektüre für das nächste Schuljahr vorschlagen.","Welche Titel werden genannt?","Du würdest lieber kündigen als diese Lektüre zu bearbeiten.",negative,"Das wird das beste Schuljahr deines Lebens.",positive
-neue-schulleitung,"Du bist die neue Schulleitung. Bei deiner Antrittsrede verkündest du, was du noch dieses Jahr umsetzen willst.","Was ist es?","Deine Kolleg:innen kündigen.",negative,"Ihr erhaltet den Deutschen Schulpreis.",positive
-neu-im-kollegium,"Du bist neu im Kollegium und willst allen eine Freude machen.","Was bringst du mit oder was organisierst du?","Alle fragen sich, wer dich eingestellt hat.",negative,"Nach einer Woche bist du in jeder Kaffeepause willkommen.",positive
-bildungsministerium,"Du bist Bildungsminister:in und darfst eine einzige neue Regel für Schulen einführen.","Welche Regel ist es?","Die Schulen versinken im Chaos.",negative,"Alle fragen sich, warum es das nicht schon längst gab.",positive
-sportunterricht,"Du unterrichtest Sport und startest mit einem Spiel.","Welches Spiel ist es?","Danach hassen alle einander.",negative,"Danach ist die Klasse ein Herz und eine Seele.",positive
-pensionierung-lied,"Du wirst pensioniert. Deine Kolleg:innen singen dir ein Abschiedslied.","Welches Lied ist es?","Es wird richtig peinlich.",negative,"Du bist total gerührt.",positive
-abschiedslied-beliebtheit,"Du wirst pensioniert. Deine Kolleg:innen singen dir ein Abschiedslied.","Welche Zeile bleibt hängen?","Deine Kolleg:innen sind froh, dass du endlich gehst.",negative,"Du merkst, wie beliebt du wirklich warst.",positive
-vertretungsstunde,"Du hast eine fachfremde Vertretungsstunde und willst die Schüler:innen begeistern.","Wie gestaltest du die Stunde?","Du wirst gefeiert als beste Vertretungskraft.",positive,"Die Schüler:innen beschweren sich öffentlich.",negative
-klasse-still,"Deine Klasse ist auf einmal ganz still.","Was ist passiert?","Alles ganz harmlos.",neutral,"Schluck. Das ist eine Katastrophe.",negative
-t-shirt-tafel,"Du drehst dich vom Tafelbild zur Klasse um. Alle starren mit aufgerissenen Augen auf dein T-Shirt.","Was ist darauf zu sehen?","Du bist oberpeinlich.",negative,"Du bist ihr neuer Held.",positive
-dankeskarte,"Deine Klasse schreibt dir eine Dankeskarte.","Was steht drauf?","So etwas Liebes hast du noch nie gelesen.",positive,"Du stellst deine Berufswahl ernsthaft infrage.",negative
-kollegin-kompliment,"Ein:e Kolleg:in macht dir ein riesiges Kompliment.","Wofür?","Damit fühlst du dich total gesehen.",positive,"Du fragst dich, ob das wirklich ein Kompliment war.",negative
-befoerderung,"Du bekommst eine Beförderung.","Wofür wirst du befördert?","Niemand versteht diese Entscheidung.",negative,"Alle sagen: Endlich wurde es gesehen.",positive
-klassenfahrt-mail,"Du bekommst eine Mail von Eltern vor der Klassenfahrt.","Was steht drin?","Die Schülerin kommt auf keinen Fall mit.",negative,"Die Eltern bieten konkrete Hilfe an und retten die Planung.",positive
-elternvertretung-mail,"Du bekommst eine Mail von der Elternvertretung.","Was steht drin?","Du brauchst danach erstmal einen langen Spaziergang.",negative,"Die Mail macht deinen ganzen Arbeitstag leichter.",positive
-neue-technik,"Die Schulleitung schafft neue Technik an.","Was ist es?","Absolut nutzlos.",negative,"Ein echter Gamechanger.",positive
-fortbildung,"Du nimmst an einer verpflichtenden Fortbildung teil.","Was passiert dort?","Reine Zeitverschwendung mit schlechtem Kaffee.",negative,"Du gehst mit drei Ideen raus, die du sofort nutzen willst.",positive
-ki-auftrag,"Du gibst einer KI einen Auftrag für den Unterricht.","Wie lautet der Prompt?","Die KI liefert genau das, was du brauchst.",positive,"Die KI ist verwirrt und zerlegt dir den Ablauf.",negative
+id,context,question,scale1,scale10
+lekture-vorschlag,"Du bist Lehrer:in. Deine Klasse soll eine Lektüre für das nächste Schuljahr vorschlagen.","Welche Titel werden genannt?","Du würdest lieber kündigen als diese Lektüre zu bearbeiten.","Das wird das beste Schuljahr deines Lebens."
+neue-schulleitung,"Du bist die neue Schulleitung. Bei deiner Antrittsrede verkündest du, was du noch dieses Jahr umsetzen willst.","Was ist es?","Deine Kolleg:innen kündigen.","Ihr erhaltet den Deutschen Schulpreis."
+neu-im-kollegium,"Du bist neu im Kollegium und willst allen eine Freude machen.","Was bringst du mit oder was organisierst du?","Alle fragen sich, wer dich eingestellt hat.","Nach einer Woche bist du in jeder Kaffeepause willkommen."
+bildungsministerium,"Du bist Bildungsminister:in und darfst eine einzige neue Regel für Schulen einführen.","Welche Regel ist es?","Die Schulen versinken im Chaos.","Alle fragen sich, warum es das nicht schon längst gab."
+sportunterricht,"Du unterrichtest Sport und startest mit einem Spiel.","Welches Spiel ist es?","Danach hassen alle einander.","Danach ist die Klasse ein Herz und eine Seele."
+pensionierung-lied,"Du wirst pensioniert. Deine Kolleg:innen singen dir ein Abschiedslied.","Welches Lied ist es?","Es wird richtig peinlich.","Du bist total gerührt."
+abschiedslied-beliebtheit,"Du wirst pensioniert. Deine Kolleg:innen singen dir ein Abschiedslied.","Welche Zeile bleibt hängen?","Deine Kolleg:innen sind froh, dass du endlich gehst.","Du merkst, wie beliebt du wirklich warst."
+vertretungsstunde,"Du hast eine fachfremde Vertretungsstunde und willst die Schüler:innen begeistern.","Wie gestaltest du die Stunde?","Du wirst gefeiert als beste Vertretungskraft.","Die Schüler:innen beschweren sich öffentlich."
+klasse-still,"Deine Klasse ist auf einmal ganz still.","Was ist passiert?","Alles ganz harmlos.","Schluck. Das ist eine Katastrophe."
+t-shirt-tafel,"Du drehst dich vom Tafelbild zur Klasse um. Alle starren mit aufgerissenen Augen auf dein T-Shirt.","Was ist darauf zu sehen?","Du bist oberpeinlich.","Du bist ihr neuer Held."
+dankeskarte,"Deine Klasse schreibt dir eine Dankeskarte.","Was steht drauf?","So etwas Liebes hast du noch nie gelesen.","Du stellst deine Berufswahl ernsthaft infrage."
+kollegin-kompliment,"Ein:e Kolleg:in macht dir ein riesiges Kompliment.","Wofür?","Damit fühlst du dich total gesehen.","Du fragst dich, ob das wirklich ein Kompliment war."
+befoerderung,"Du bekommst eine Beförderung.","Wofür wirst du befördert?","Niemand versteht diese Entscheidung.","Alle sagen: Endlich wurde es gesehen."
+klassenfahrt-mail,"Du bekommst eine Mail von Eltern vor der Klassenfahrt.","Was steht drin?","Die Schülerin kommt auf keinen Fall mit.","Die Eltern bieten konkrete Hilfe an und retten die Planung."
+elternvertretung-mail,"Du bekommst eine Mail von der Elternvertretung.","Was steht drin?","Du brauchst danach erstmal einen langen Spaziergang.","Die Mail macht deinen ganzen Arbeitstag leichter."
+neue-technik,"Die Schulleitung schafft neue Technik an.","Was ist es?","Absolut nutzlos.","Ein echter Gamechanger."
+fortbildung,"Du nimmst an einer verpflichtenden Fortbildung teil.","Was passiert dort?","Reine Zeitverschwendung mit schlechtem Kaffee.","Du gehst mit drei Ideen raus, die du sofort nutzen willst."
+ki-auftrag,"Du gibst einer KI einen Auftrag für den Unterricht.","Wie lautet der Prompt?","Die KI liefert genau das, was du brauchst.","Die KI ist verwirrt und zerlegt dir den Ablauf."

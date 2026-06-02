@@ -47,18 +47,10 @@ Each card has:
 - `id`
 - `context`
 - `question`
-- `scaleLow`
-- `toneLow`
-- `scaleHigh`
-- `toneHigh`
+- `scale1`
+- `scale10`
 
-The tone fields are important because the `1` and `10` ends of the scale are not always simply “bad” and “good”. Some cards intentionally reverse that relationship.
-
-Allowed tones:
-
-- `positive`
-- `negative`
-- `neutral`
+The scale fields describe the two fixed ends of the card scale. The visual scale always runs from green to red, so card authors should treat `1 → 10` as increasing intensity, escalation, risk, chaos, or absurdity.
 
 ## License
 
